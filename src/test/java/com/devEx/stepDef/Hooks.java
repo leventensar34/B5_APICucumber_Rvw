@@ -1,6 +1,7 @@
 package com.devEx.stepDef;
 
-import com.devEx.utulities.ConfigurationReader;
+import com.devEx.utilities.ConfigurationReader;
+import com.devEx.utilities.Driver;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 

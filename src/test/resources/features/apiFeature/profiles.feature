@@ -1,4 +1,4 @@
-@wip
+
 Feature: Retrieve Profile
 
   Scenario: User able to see all profile

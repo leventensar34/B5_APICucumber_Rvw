@@ -17,4 +17,50 @@ public class DataForApi {
 
         return  requestMap;
     }
+
+    public static Map<String,Object> saveProfileBody(String company,String website,String location,String status,String skills,
+                                                     String githubusername,String youtube,String twitter,String facebook,String linkedln,String instagram){
+
+        Map<String,Object> profileBody=new HashMap<>();
+        profileBody.put("company",company);
+        profileBody.put("website",website);
+        profileBody.put("location",location);
+        profileBody.put("status",status);
+        profileBody.put("skills",skills);
+        profileBody.put("githubusername",githubusername);
+        profileBody.put("youtube",youtube);
+        profileBody.put("twitter",twitter);
+        profileBody.put("facebook",facebook);
+        profileBody.put("linkedin",linkedln);
+        profileBody.put("instagram",instagram);
+
+        return profileBody;
+
+    }
+    /*
+    {
+  "title": "string",
+  "company": "string",
+  "location": "string",
+  "from": "YYYY-MM-DD",
+  "to": "YYYY-MM-DD",
+  "current": false,
+  "description": "string"
+   }
+     */
+
+    public static Map<String,Object> experienceBody(String title,String company,String location,String from,String to,String current,String description){
+
+        Map<String,Object> experienceBody=new HashMap<>();
+        experienceBody.put("title",title);
+        experienceBody.put("company",company);
+        experienceBody.put("location",location);
+        experienceBody.put("from",from);
+        experienceBody.put("to",to);
+        experienceBody.put("current",current);
+        experienceBody.put("description",description);
+
+        return experienceBody;
+    }
+
 }
